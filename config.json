@@ -1,0 +1,67 @@
+{
+    "window": {
+        "title": "Google Chrome",
+        "roi": [
+            {
+                "x": 516,
+                "y": 367,
+                "width": 823,
+                "height": 607
+            }
+        ]
+    },
+    "vision": {
+        "hsv": {
+            "ranges": [
+                {
+                    "name": "green",
+                    "lower": [
+                        35,
+                        40,
+                        40
+                    ],
+                    "upper": [
+                        85,
+                        255,
+                        255
+                    ]
+                },
+                {
+                    "name": "red_low",
+                    "lower": [
+                        0,
+                        40,
+                        40
+                    ],
+                    "upper": [
+                        10,
+                        255,
+                        255
+                    ]
+                },
+                {
+                    "name": "red_high",
+                    "lower": [
+                        170,
+                        40,
+                        40
+                    ],
+                    "upper": [
+                        179,
+                        255,
+                        255
+                    ]
+                }
+            ]
+        },
+        "rectangle": {
+            "epsilon": 0.02,
+            "min_area": 80,
+            "width_tolerance": 0.25
+        }
+    },
+    "display": {
+        "show_mask": true,
+        "show_contours": true
+    }
+}
